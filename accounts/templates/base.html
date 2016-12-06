@@ -1,0 +1,19 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+</head>
+<body>
+    <div id="login">
+        <span class="fontawesome-lock">My Apps</span>
+    </div>
+    <div id="login">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
